@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Awesome Register Form</title>
+  </head>
+  <body>
+    <form class="" >
+      <div class="login-form">
+        <h1>Register form</h1>
+        <div class="first-name">
+          <label for="first">First Name</label>
+          <input type="text" id="first" placeholder="enter your first name">
+        </div>
+        <div class="last-name">
+          <label for="last">Last Name</label>
+          <input type="text" id="last" placeholder="enter your last name">
+        </div>
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="enter your adress email">
+        </div>
+        <div class="user-name">
+          <label for="user">Username</label>
+          <input type="text" id="user" placeholder="enter your username">
+        </div>
+        <div class="pass">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="enter your password">
+        </div>
+        <div class="sub">
+          <input type="submit"  value="Submit">
+          <label>Do you have an account? <a href="#">Click Here</a></label>
+        </div>
+      </div>
+    </form>
+    <style media="screen">
+      body{
+        margin:0;
+        padding:0;
+        text-align: center;
+        font-family:sans-serif;
+        background: #ebf5fc;
+      }
+      .login-form{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        padding: 20px 40px 40px;
+        background: #ebf5fc;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: -5px -5px 15px rgba(255, 255,255,0.6),
+                    5px 5px 10px rgba(0, 0,0,0.1);
+      }
+      .login-form h1{
+        font-size: 30px;
+        font-weight: 400;
+      }
+      .first-name label,
+      .last-name label,
+      .email label,
+      .user-name label,
+      .pass label{
+        display: block;
+        position: relative;
+        padding: 10px;
+        font-size: 16px;
+      }
+      .first-name input,
+      .last-name input,
+      .email input,
+      .user-name input,
+      .pass input{
+        text-align: center;
+        color: #f78fb3;
+        font-size: 18px;
+        outline:none;
+        border-radius:30px;
+        width:250px;
+        height:40px;
+        border:none;
+        box-shadow: inset -2px -2px 6px rgba(255, 255,255,1),
+                    inset 2px 2px 6px rgba(0, 0,0,0.1);
+        background: #ebf5fc;
+      }
+      ::-webkit-input-placeholder{
+          font-size: 14px;
+          text-align: center;
+          color: #63cdda;
+        }
+      .sub input{
+        margin: 20px;
+        cursor: pointer;
+        color: #f78fb3;
+        font-size: 18px;
+        outline:none;
+        border-radius:30px;
+        width:150px;
+        height:40px;
+        border:none;
+        box-shadow:  -2px -2px 6px rgba(255, 255,255,0.6),
+                     2px 2px 6px rgba(0, 0,0,0.1);
+        background: #ebf5fc;
+      }
+      .sub input:active{
+        box-shadow:  inset -2px -2px 6px rgba(255, 255,255,0.6),
+                     inset 2px 2px 6px rgba(0, 0,0,0.1);
+      }
+      .sub label{
+        display: block;
+        font-size: 14px;
+        padding: 0;
+      }
+      .sub label a{
+        color: #63cdda;
+      }
+    </style>
+  </body>
+</html>
